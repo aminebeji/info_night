@@ -22,6 +22,12 @@ const inistialState = {
     { id: 2, name: "Stage 2", description: "" },
   ],
   currentStage: 0,
+  stepone:false,
+  steptwo:false,
+  stepthree:false,
+  forthstep:false,
+  fifthstep:false,
+  sixstep:false,
 };
 
 const Reducer = (state = inistialState, action) => {
@@ -31,6 +37,37 @@ const Reducer = (state = inistialState, action) => {
         ...state,
         currentStage: 1,
       };
+    case Types.FIFTHSTEP:
+      return {
+        ...state,
+        stepone:action.payload,
+      };
+
+    case Types.SECONDSTEP :
+      return {
+        ...state,
+        steptwo:action.payload,
+      }
+    case Types.THIRDSTEP:
+      return {
+        ...state,
+        stepthree:action.payload,
+      }
+    case Types.FORTHSTEP:
+      return {
+        ...state,
+        forthstep:action.payload
+      }
+    case Types.FIFTHSTEP : 
+    return {
+      ...state,
+      fifthstep:action.payload,
+    }
+    case Types.SIXTHSTEP:
+      return {
+        ...state,
+        sixstep : action.payload
+      }
     default:
       return state;
   }

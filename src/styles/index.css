@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.Home_fc {
+  width: 100%;
+}
+
+.stepperC {
+  margin-top: 15%;
+}
+.css-8atqhb {
+  display: flex !important ;
+  justify-content: center !important;
+  display: flex  !important;
+}
+.css-m5vj9m-MuiStepper-root {
+  width: 60% !important;
+}
+
+.list_question {
+
+}
+
+.qu_container {
+  display: flex;
+}
+
+.response_d {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}

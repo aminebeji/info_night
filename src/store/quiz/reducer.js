@@ -18,9 +18,33 @@ const inistialState = {
     },
   ],
   Stages: [
-    { id: 1, name: "Stage 1", description: "" },
-    { id: 2, name: "Stage 2", description: "" },
+    {
+      id: 1,
+      name: "Stage 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      id: 2,
+      name: "Stage 2",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      id: 3,
+      name: "Stage 3",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      id: 4,
+      name: "Stage 4",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      id: 5,
+      name: "Stage 5",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
   ],
+  doneStages: [],
   currentStage: 0,
 };
 
@@ -30,6 +54,11 @@ const Reducer = (state = inistialState, action) => {
       return {
         ...state,
         currentStage: 1,
+      };
+    case Types.SET_STAGE:
+      return {
+        ...state,
+        currentStage: action.payload,
       };
     default:
       return state;

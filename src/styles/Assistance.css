@@ -1,0 +1,13 @@
+.doctors {
+  background-color: inherit;
+}
+
+.doctors-container {
+  height: 600px;
+  padding: 20px;
+  padding-top: 150px;
+}
+
+.doctor-item {
+  display: flex;
+}

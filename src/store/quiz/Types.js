@@ -1,4 +1,8 @@
 export default {
-        START_QUIZZ: "START_QUIZZ",
-      
-}
+  START_QUIZZ: "START_QUIZZ",
+  SET_STAGE: "SET_STAGE",
+  ADD_RESPONSE: "ADD_RESPONSE",
+  SET_IS_DONE : "SET_IS_DONE",
+  REGAME : "REGAME",
+  END : "END"
+};

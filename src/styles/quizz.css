@@ -1,0 +1,44 @@
+.quizz_container {
+    padding: 10em 2em;
+    display: grid;
+    flex-direction: row;
+    width: 75%;
+    align-items: center;
+    margin: auto;
+}
+
+.step_container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10%;
+}
+.step_image {
+  width: 350px;
+
+}
+
+.active {
+  cursor: pointer;
+}
+
+.start .texts {
+text-align: start;
+}
+
+.end .texts {
+  text-align: end;
+  }
+  .top_cover {
+    position: absolute;
+    left: 0;
+  }
+  .down_cover {
+    position: absolute;
+    bottom : 0;
+    right:  0;
+  }
+  .Level {
+    font-size: 58px;
+    color: #ff989c;
+  }

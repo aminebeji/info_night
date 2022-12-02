@@ -31,10 +31,14 @@ text-align: start;
   }
   .top_cover {
     position: absolute;
-    left: -3%;
+    left: 0;
   }
   .down_cover {
     position: absolute;
-    bottom : -3%;
-    right:  -7%;
+    bottom : 0;
+    right:  0;
+  }
+  .Level {
+    font-size: 58px;
+    color: #ff989c;
   }

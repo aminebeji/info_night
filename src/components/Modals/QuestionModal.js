@@ -5,7 +5,6 @@ import Questions from "../Questions";
 import StepperFC from "../StepperFC";
 import { useSelector, useDispatch } from "react-redux";
 import { setIsDone, setStage } from "../../store/quiz/actions";
-import DoneModal from './DoneModal';
 
 const style = {
   position: "absolute",
@@ -56,7 +55,7 @@ function QuestionModal({ open, handleClose }) {
               title={currentQuestion[currentQuestionID].question}
               type={currentQuestion[currentQuestionID].type}
               change={() => {
-                if (currentQuestionID == 5 && currentStage == 5) {
+                if ( currentQuestionID == 5 && currentStage == 5) {
                   dispatch(setIsDone(true));
                   return;
                 }
@@ -71,7 +70,7 @@ function QuestionModal({ open, handleClose }) {
           </div>
         )}
       </Box>
-      </Modal>
+    </Modal>
   );
 }
 

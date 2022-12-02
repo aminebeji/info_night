@@ -5,17 +5,11 @@ var stages = require("./../../data/stages.json");
 const inistialState = {
   Questions: questions,
   Stages: stages,
-  doneStages: [],
   currentStage: 0,
-  stepone: true,
-  steptwo: false,
-  stepthree: false,
-  forthstep: false,
-  fifthstep: false,
-  sixstep: false,
   response: [],
   isDone: false,
   score: 0,
+  doneStages : []
 };
 
 const Reducer = (state = inistialState, action) => {
@@ -26,42 +20,13 @@ const Reducer = (state = inistialState, action) => {
         currentStage: 1,
       };
     case Types.SET_STAGE: {
+      var doneStages = state.doneStages
+      doneStages.push(action.payload - 1)
       return {
         ...state,
         currentStage: action.payload,
       };
     }
-    case Types.FIFTHSTEP:
-      return {
-        ...state,
-        stepone: action.payload,
-      };
-
-    case Types.SECONDSTEP:
-      return {
-        ...state,
-        steptwo: action.payload,
-      };
-    case Types.THIRDSTEP:
-      return {
-        ...state,
-        stepthree: action.payload,
-      };
-    case Types.FORTHSTEP:
-      return {
-        ...state,
-        forthstep: action.payload,
-      };
-    case Types.FIFTHSTEP:
-      return {
-        ...state,
-        fifthstep: action.payload,
-      };
-    case Types.SIXTHSTEP:
-      return {
-        ...state,
-        sixstep: action.payload,
-      };
     case Types.ADD_RESPONSE:
       var responses = state.response;
       console.log(responses);
@@ -75,6 +40,20 @@ const Reducer = (state = inistialState, action) => {
         ...state,
         isDone: true,
       };
+      case Types.REGAME : 
+      return {
+        ...state,
+        isDone : false,
+        responses : [],
+        currentStage : 1
+      }
+      case Types.END : 
+      return {
+        ...state,
+        isDone : false,
+        responses : [],
+        currentStage : 0
+      }
     default:
       return state;
   }

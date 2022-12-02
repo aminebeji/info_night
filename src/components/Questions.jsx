@@ -4,7 +4,6 @@ const Questions = ({ question, title, type , id , change}) => {
   return (
     <div className="qu_container">
       <div className="questiontitle"><b>{title}</b></div>
-      <div className="list_question"><p>{question}</p></div>
       <div className="res">
         <ResponseInput type={type} id={id } change={change}/>
       </div>

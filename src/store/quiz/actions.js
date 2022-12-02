@@ -8,27 +8,36 @@ export const setStage = (data) => async (dispatch) => {
   dispatch({ type: Types.SET_STAGE, payload: data });
 };
 
-
-
-
-export const changeStepValue = (type) => async(dispatch) => {
-    dispatch({
-        type:Types.type,
-        payload:true
-    })
+export const changeStepValue = (type) => async (dispatch) => {
+  dispatch({
+    type: Types.type,
+    payload: true,
+  });
 };
-
 
 export const setResponse = (data) => async (dispatch) => {
   dispatch({
-    type : Types.ADD_RESPONSE ,
-    payload : data
-  })
-} 
+    type: Types.ADD_RESPONSE,
+    payload: data,
+  });
+};
 
-export const setIsDone = data => async (dispatch ) => {
+export const setIsDone = (data) => async (dispatch) => {
   dispatch({
-    type : Types.SET_IS_DONE ,
-    payload : data
-  })
+    type: Types.SET_IS_DONE,
+    payload: data,
+  });
+};
+
+export const Regame = () => async (dispatch) => {
+  dispatch({
+    type: Types.REGAME,
+  });
+};
+
+
+export const End = () => (dispatch) => {
+  dispatch({
+    type: Types.END
+  });
 }

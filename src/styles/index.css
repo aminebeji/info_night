@@ -123,6 +123,7 @@ textarea {
   height: 39px;
   width: 151px;
   border: 0;
+  cursor: pointer;
 }
 
 .nbtn {
@@ -131,12 +132,13 @@ textarea {
   height: 39px;
   width: 151px;
   border: 0;
-
+cursor: pointer;
 
 }
 
 .res {
   margin-left: -28px;
+  margin-top: 50px;
 }
 
 .MuiBox-root.css-m0ki15 {
@@ -144,5 +146,18 @@ textarea {
 } 
 
 .scorecontainer {
-
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+.donebtn-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  gap : 10px;
+}
+.score_icons {
+  display: flex;
+  justify-content: center;
 }

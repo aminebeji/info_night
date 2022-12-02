@@ -1,75 +1,63 @@
 [
     {
-        "step": "FIRSTSTEP",
         "id": 1,
-        "question": "Question 1",
+        "question": "LA PILULE CONTRACEPTIVE D’URGENCE PROTÈGE-T-ELLE D’UNE CONTAMINATION AU VIH ?",
         "stageID": 1,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 2,
-        "question": "Question 2",
+        "question": " EST-IL RISQUÉ D’EMBRASSER UNE PERSONNE SÉROPOSITIVE ?",
         "stageID": 1,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 3,
-        "question": "Question 3",
+        "question": "EST-CE QUE LA PÉNÉTRATION ANALE EST UN MODE DE TRANSMISSION DU VIH ?",
         "stageID": 1,
         "type": "oui/non",
         "response": "oui"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 4,
-        "question": "Question 4",
+        "question": ". EST-CE QUE LA PÉNÉTRATION VAGINALE EST UN MODE DE TRANSMISSION DU VIH ?",
         "stageID": 1,
         "type": "oui/non",
         "response": "oui"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 5,
-        "question": "Question 5",
+        "question": ". Y A-T-IL UN RISQUE DE CONTRACTER LE VIH EN S’ASSEYANT SUR DES TOILETTES PUBLIQUES ?",
         "stageID": 1,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 6,
-        "question": "Question 6",
+        "question": "EST-CE QUE LES RAPPORTS SEXUELS SONT LES SEULS MODES DE TRANSMISSION DU VIH ?",
         "stageID": 1,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
-    
-
-
     {
-        "step": "FIRSTSTEP",
         "id": 7,
-        "question": "Question 1",
+        "question": "Est ce que les préservatifs l'un des 3 MÉTHODES PRINCIPALES POUR SE PROTÉGER DU VIH ?",
         "stageID": 2,
         "type": "oui/non",
         "response": "oui"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 8,
-        "question": "Question 2",
+        "question": " LE PRÉSERVATIF INTERNE (FÉMININ) PROTÈGE-T-IL DU VIH ?",
         "stageID": 2,
         "type": "oui/non",
         "response": "oui"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 9,
-        "question": "Question 3",
+        "question": "EXISTE-IL UN TRAITEMENT PRÉVENTIF QUI PROTÈGE DU VIH ?",
         "stageID": 2,
         "type": "oui/non",
         "response": "oui"
@@ -77,15 +65,15 @@
     {
         "step": "FIRSTSTEP",
         "id": 10,
-        "question": "Question 4",
+        "question": " FAUT-IL UNE ORDONNANCE DE SON MÉDECIN POUR SE FAIRE DÉPISTER ?",
         "stageID": 2,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
         "step": "FIRSTSTEP",
         "id": 11,
-        "question": "Question 5",
+        "question": "Est que L’autotest est un MÉTHODE DE DÉPISTAGE DU VIH CONNAISSEZ-VOUS ?",
         "stageID": 2,
         "type": "oui/non",
         "response": "oui"
@@ -93,21 +81,15 @@
     {
         "step": "FIRSTSTEP",
         "id": 12,
-        "question": "Question 6",
+        "question": "EST-CE QUE LE DÉPISTAGE DU VIH, C’EST POUR TOUT LE MONDE ?",
         "stageID": 2,
         "type": "oui/non",
         "response": "oui"
     },
-
-
-
-
-
-
     {
         "step": "FIRSTSTEP",
         "id": 13,
-        "question": "Question 1",
+        "question": "EST CE QUE ON se rendre aux urgences APRÈS UN RAPPORT SEXUEL À RISQUE ?",
         "stageID": 3,
         "type": "oui/non",
         "response": "oui"
@@ -115,7 +97,7 @@
     {
         "step": "FIRSTSTEP",
         "id": 14,
-        "question": "Question 2",
+        "question": "EST CE QUE LE SLOGAN I = I SIGNIFIE  indétectable = intransmissible ?",
         "stageID": 3,
         "type": "oui/non",
         "response": "oui"
@@ -123,23 +105,23 @@
     {
         "step": "FIRSTSTEP",
         "id": 15,
-        "question": "Question 3",
+        "question": "AVOIR UNE CHARGE VIRALE INDÉTECTABLE, EST-CE QUE ÇA VEUT DIRE NE PLUS ÊTRE SÉROPOSITIF ?",
         "stageID": 3,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
         "step": "FIRSTSTEP",
         "id": 16,
-        "question": "Question 4",
+        "question": "UN ENFANT DONT LA MÈRE EST SÉROPOSITIVE EST-IL FORCÉMENT ATTEINT PAR LE VIH ?",
         "stageID": 3,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
         "step": "FIRSTSTEP",
         "id": 17,
-        "question": "Question 5",
+        "question": "LA SÉROPHOBIE est le fait de discriminer les personnes vivant avec le VIH. ?",
         "stageID": 3,
         "type": "oui/non",
         "response": "oui"
@@ -147,47 +129,39 @@
     {
         "step": "FIRSTSTEP",
         "id": 18,
-        "question": "Question 6",
+        "question": " UN PERSONNEL DE SANTÉ A-T-IL LE DROIT  DE REFUSER DE SOIGNER UNE PERSONNE  SÉROPOSITIVE ?",
         "stageID": 3,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
-
-
-
-
-
-
-
-
     {
         "step": "FIRSTSTEP",
         "id": 19,
-        "question": "Question 1",
+        "question": "UNE PERSONNE SÉROPOSITIVE PEUT-ELLE VOYAGER LIBREMENT DANS TOUS LES PAYS ?",
         "stageID": 4,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
         "step": "FIRSTSTEP",
         "id": 20,
-        "question": "Question 2",
+        "question": "UNE PERSONNE SÉROPOSITIVE OBTIENT-ELLE FACILEMENT UN PRÊT IMMOBILIER ?",
         "stageID": 4,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
         "step": "FIRSTSTEP",
         "id": 21,
-        "question": "Question 3",
+        "question": "UNE PERSONNE SÉROPOSITIVE PEUT-ELLE PARLER LIBREMENT DE SON STATUT SÉROLOGIQUE SANS ÊTRE REJETÉE ?",
         "stageID": 4,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
         "step": "FIRSTSTEP",
         "id": 22,
-        "question": "Question 4",
+        "question": "UNE PERSONNE SÉROPOSITIVE PEUT-ELLE TRAVAILLER ?",
         "stageID": 4,
         "type": "oui/non",
         "response": "oui"
@@ -195,7 +169,7 @@
     {
         "step": "FIRSTSTEP",
         "id": 23,
-        "question": "Question 5",
+        "question": "CERTAINS MÉTIERS SONT-ILS ENCORE INTERDITS AUX PERSONNES SÉROPOSITIVES ?",
         "stageID": 4,
         "type": "oui/non",
         "response": "oui"
@@ -203,23 +177,15 @@
     {
         "step": "FIRSTSTEP",
         "id": 24,
-        "question": "Question 6",
+        "question": "AVOIR UNE RELATION SEXUELLE AVEC UNE PERSONNE SÉROPOSITIVE : EST-CE RISQUÉ ?",
         "stageID": 4,
         "type": "oui/non",
-        "response": "oui"
+        "response": "une personne séropositive sous traitement efficace et une charge virale indétectable ne transmet pas le VIH"
     },
-
-
-
-
-
-
-
-
     {
         "step": "FIRSTSTEP",
         "id": 25,
-        "question": "Question 1",
+        "question": "UNE PERSONNE SÉROPOSITIVE PEUT-ELLE RECEVOIR DES SOINS FUNÉRAIRES ?",
         "stageID": 5,
         "type": "oui/non",
         "response": "oui"
@@ -227,15 +193,14 @@
     {
         "step": "FIRSTSTEP",
         "id": 26,
-        "question": "Question 2",
+        "question": "LA SÉROPHOBIE, EST-CE UN PHÉNOMÈNE GÉNÉRALISÉ, PRÉSENT AUSSI BIEN DANS LA VIE  PRIVÉE, SOCIALE ET PROFESSIONNELLE ?",
         "stageID": 5,
         "type": "oui/non",
         "response": "oui"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 27,
-        "question": "Question 3",
+        "question": "Utiliser un préservatif et/ou avoir fait un test de dépistage permet de maîtriser le risque de transmission du virus ?",
         "stageID": 5,
         "type": "oui/non",
         "response": "oui"
@@ -243,7 +208,7 @@
     {
         "step": "FIRSTSTEP",
         "id": 28,
-        "question": "Question 4",
+        "question": "LA SÉROPHOBIE est le fait de discriminer les personnes vivant avec le VIH. ?",
         "stageID": 5,
         "type": "oui/non",
         "response": "oui"
@@ -251,17 +216,16 @@
     {
         "step": "FIRSTSTEP",
         "id": 29,
-        "question": "Question 5",
+        "question": "UNE PERSONNE SÉROPOSITIVE PEUT-ELLE PARLER LIBREMENT DE SON STATUT SÉROLOGIQUE SANS ÊTRE REJETÉE ?",
         "stageID": 5,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     },
     {
-        "step": "FIRSTSTEP",
         "id": 30,
-        "question": "Question 6",
+        "question": "EST-CE QUE LES RAPPORTS SEXUELS SONT LES SEULS MODES DE TRANSMISSION DU VIH ?",
         "stageID": 5,
         "type": "oui/non",
-        "response": "oui"
+        "response": "non"
     }
 ]

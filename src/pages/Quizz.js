@@ -15,9 +15,8 @@ import Step3Active from "./../assets/steps/active/Step3.svg";
 import Step4Active from "./../assets/steps/active/Step4.svg";
 import Step5Active from "./../assets/steps/active/Step5.svg";
 
-import Top from "./../assets/steps/Top.svg";
-import Down from "./../assets/steps/Down.svg";
 import QuestionModal from "../components/Modals/QuestionModal";
+import DoneModal from "../components/Modals/DoneModal";
 
 const Start = {
   display: "flex",
@@ -34,6 +33,7 @@ const End = {
 function Quizz() {
   var dispatch = useDispatch();
   var doneStages = useSelector((state) => state.quizz.doneStages);
+  var isDone= useSelector(state=> state.quizz.isDone)
   var Stages = useSelector((state) => state.quizz.Stages);
   var currentStage = useSelector((state) => state.quizz.currentStage);
   var IsActive = (id) => {
@@ -46,12 +46,12 @@ function Quizz() {
     <div
       style={{ position: "relative", overflowY: "hidden", overflowX: "hidden" }}
     >
-      <img className="top_cover" src={Top} style={{ width: "750px" }} />
+      <img className="top_cover" src={require("./../assets/steps/top.png")} style={{ width: "750px" }} />
       <div className="quizz_container">
         <ArcherContainer
           endMarker={false}
           startMarker={false}
-          strokeColor="red"
+          strokeColor="#ff989c"
         >
           <div className="start" style={Start}>
             <ArcherElement
@@ -77,13 +77,13 @@ function Quizz() {
               </div>
             </ArcherElement>
             <div className="texts">
-              <h1> {Stages[0].name} </h1>
+              <h1 className="Level"> {Stages[0].name} </h1>
               <p>{Stages[0].description}</p>
             </div>
           </div>
           <div className="end" style={End}>
             <div className="texts">
-              <h1> {Stages[1].name} </h1>
+              <h1 className="Level"> {Stages[1].name} </h1>
               <p>{Stages[1].description}</p>
             </div>
             <ArcherElement
@@ -131,13 +131,13 @@ function Quizz() {
               </div>
             </ArcherElement>
             <div className="texts">
-              <h1> {Stages[2].name} </h1>
+              <h1 className="Level"> {Stages[2].name} </h1>
               <p>{Stages[2].description}</p>
             </div>
           </div>
           <div className="end" style={End}>
             <div className="texts">
-              <h1> {Stages[3].name} </h1>
+              <h1 className="Level"> {Stages[3].name} </h1>
               <p>{Stages[3].description}</p>
             </div>
             <ArcherElement
@@ -174,16 +174,17 @@ function Quizz() {
               </div>
             </ArcherElement>
             <div className="texts">
-              <h1> {Stages[4].name} </h1>
+              <h1 className="Level"> {Stages[4].name} </h1>
               <p>{Stages[4].description}</p>
             </div>
           </div>
         </ArcherContainer>
       </div>
-      <img className="down_cover" src={Down} style={{ width: "750px" }} />
-      {currentStage != 0 && (
+      <img className="down_cover" src={require("./../assets/steps/down.png")} style={{ width: "750px" }} />
+      {currentStage != 0 && !isDone && (
         <QuestionModal open={currentStage != 0} handleClose={() => {}} />
       )}{" "}
+      { isDone && <DoneModal open={isDone} />}
     </div>
   );
 }

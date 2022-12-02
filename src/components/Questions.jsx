@@ -8,12 +8,12 @@ const Questions = ({question,title}) => {
  
     return (
     <div className="qu_container" >
-        <div>{title}</div>
+        <div className="questiontitle" >{title}</div>
        <div className="list_question" >
          {question}
         </div>
         <div className="res" >
-            <ResponseInput type={"oui/non"} />
+            <ResponseInput  type={"input"} />
         </div>
         
     </div>  

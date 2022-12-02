@@ -10,7 +10,7 @@ const ResponseInput = ({type}) => {
         </div>
     }
     if(type === "input") {
-        return <div className="response_d" >
+        return <div className="response_in" >
             <Input/>
         </div>
     }

@@ -10,11 +10,11 @@ function Home() {
 
       </div>
       <div className="question_section" >
-        <Questions question={"exemple question"} type={"BOOL"} />
+         <Questions question={"exemple question"} title={"exemple Title"}  /> 
 
       </div>
-        <InfoSection>
-        </InfoSection>
+         <InfoSection>
+        </InfoSection> 
       </div>
     )
 }

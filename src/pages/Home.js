@@ -10,7 +10,7 @@ function Home() {
 
       </div>
       <div className="question_section" >
-         <Questions question={"exemple question"} title={"exemple Title"}  /> 
+         <Questions   /> 
 
       </div>
          <InfoSection>

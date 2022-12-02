@@ -22,8 +22,8 @@ code {
   margin-top: 15%;
 }
 
-.stepperC {
-  
+.stepper {
+  margin-left: 3.5%;
 }
 .css-8atqhb {
   display: flex !important ;
@@ -42,6 +42,14 @@ code {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  margin-top: 15%;
+  margin-left: 7%;  
+}
+
+.css-m0ki15 {
+  width: 640px !important;
+  border-radius: 20px !important ;
+  border:0 !important;
 }
 
 .response_d {
@@ -106,3 +114,29 @@ textarea {
     width:62%;
   }
 }
+
+.obtn {
+  background-color:#77D48B;
+  border-radius: 10px;
+  height: 39px;
+  width: 151px;
+  border: 0;
+}
+
+.nbtn {
+  background-color:#DA7B7B	;
+  border-radius: 10px;
+  height: 39px;
+  width: 151px;
+  border: 0;
+
+
+}
+
+.res {
+  margin-left: -28px;
+}
+
+.MuiBox-root.css-m0ki15 {
+  
+} 

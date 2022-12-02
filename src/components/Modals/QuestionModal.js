@@ -26,7 +26,6 @@ function QuestionModal({ open, handleClose }) {
       return item;
     }
   });
-  console.log(currentQuestion)
   return (
     <Modal
       open={open}

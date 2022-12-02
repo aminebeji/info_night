@@ -6,8 +6,8 @@ const ResponseInput = ({ type }) => {
   if (type === "oui/non") {
     return (
       <div className="response_d">
-        <CommonButton title={"Oui"} />
-        <CommonButton title={"Non"} />
+        <CommonButton content={true} title={"Oui"} />
+        <CommonButton content={false} title={"Non"} />
       </div>
     );
   }

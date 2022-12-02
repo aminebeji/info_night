@@ -4,12 +4,12 @@ import CommonButton from "../components/Buttons/CommonButton";
 function NavBar() {
   return (
     <div>
-      <CommonButton
+      {/* <CommonButton
         title="Click Me !"
         onClick={() => {
           console.log("Click me !");
         }}
-      />
+      /> */}
     </div>
   );
 }

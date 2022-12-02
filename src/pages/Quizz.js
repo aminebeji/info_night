@@ -17,6 +17,7 @@ import Step5Active from "./../assets/steps/active/Step5.svg";
 
 import Top from "./../assets/steps/Top.svg";
 import Down from "./../assets/steps/Down.svg";
+import QuestionModal from "../components/Modals/QuestionModal";
 
 const Start = {
   display: "flex",
@@ -34,7 +35,7 @@ function Quizz() {
   var dispatch = useDispatch();
   var doneStages = useSelector((state) => state.quizz.doneStages);
   var Stages = useSelector((state) => state.quizz.Stages);
-
+  var currentStage = useSelector((state) => state.quizz.currentStage);
   var IsActive = (id) => {
     return doneStages.includes(id - 1);
   };
@@ -180,6 +181,7 @@ function Quizz() {
         </ArcherContainer>
       </div>
       <img className="down_cover" src={Down} style={{ width: "750px" }} />
+      {currentStage != 0 && <QuestionModal />}
     </div>
   );
 }

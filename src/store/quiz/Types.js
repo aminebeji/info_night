@@ -1,4 +1,11 @@
 export default {
         START_QUIZZ: "START_QUIZZ",
-        SET_STAGE : "SET_STAGE"
+        SET_STAGE : "SET_STAGE",
+        FIRSTSTEP:"FIRSTSTEP",
+        SECONDSTEP : "SECONDSTEP",
+        THIRDSTEP:"THIRDSTEP",
+        FORTHSTEP:"FORTHSTEP",
+        FIFTHSTEP:"FORTHSTEP",
+        SIXTHSTEP: "SIXTHSTEP",
+      
 }

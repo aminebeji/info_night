@@ -4,7 +4,7 @@ const inistialState = {
     {
       step: "FIRSTSTEP",
       id: 1,
-      question: "",
+      question: "Question 1",
       stageID: 1,
       type: "oui/non",
       response: "oui",

@@ -20,12 +20,13 @@ const style = {
 
 function QuestionModal({ open, handleClose }) {
   var currentStage = useSelector((state) => state.quizz.currentStage);
-  var Questions = useSelector((state) => state.quizz.Questions);
-  var currentQuestion = Questions.filter((item) => {
+  var question = useSelector((state) => state.quizz.Questions);
+  var currentQuestion = question.filter((item) => {
     if (item.stageID == currentStage) {
       return item;
     }
   });
+  console.log(currentQuestion)
   return (
     <Modal
       open={open}
@@ -38,7 +39,7 @@ function QuestionModal({ open, handleClose }) {
         <div className="question_section">
           {currentQuestion.map((item) => {
             return (
-              <Questions question={item.question} title={"exemple Title"} />
+              <Questions key={item.id} question={item.question} title={item.question}  type={item.type}/>
             );
           })}
         </div>{" "}

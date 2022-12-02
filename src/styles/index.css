@@ -57,15 +57,19 @@ code {
   width: 60%;
   gap: 10%;
 }
-.firstSDone,.secondSDone,.thirdSDone,.forthSDone,.fifthSDone,.sixthSDone {
-  background-color:green;
+.correct {
+  background-color:lightgreen;
   width: 82px;
   height: 3px;
 }
 
-
-.firstStep,.secondStep,.thirdStep,.forthS,.fifthS,.sixthS {
+.notDone  {
   background-color:grey;
+  width: 82px;
+  height: 3px;
+}
+.wrong {
+  background-color:red;
   width: 82px;
   height: 3px;
 }

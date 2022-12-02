@@ -1,87 +1,10 @@
 import Types from "./Types";
+var questions = require("./../../data/Question.json");
+var stages = require("./../../data/stages.json");
+
 const inistialState = {
-  Questions: [
-    {
-      step: "FIRSTSTEP",
-      id: 1,
-      question: "Question 1",
-      stageID: 1,
-      type: "oui/non",
-      response: "oui",
-    },
-    {
-      step: "SECONDSTEP",
-      id: 2,
-      question: "question 1 ?",
-      stageID: 2,
-      type: "input",
-      response: "response here !",
-    },
-    {
-      step: "THIRDSTEP",
-      id: 2,
-      question: "question 2 ?",
-      stageID: 3,
-      type: "input",
-      response: "response here !",
-    },
-    {
-      step: "FORTHSTEP",
-      id: 2,
-      question: "question 2 ?",
-      stageID: 3,
-      type: "input",
-      response: "response here !",
-    },
-    {
-      step: "FIFTHSTEP",
-      id: 2,
-      question: "question 2 ?",
-      stageID: 3,
-      type: "input",
-      response: "response here !",
-    },
-    {
-      step: "SIXTHSTEP",
-      id: 2,
-      question: "question 2 ?",
-      stageID: 3,
-      type: "input",
-      response: "response here !",
-    },
-  ],
-  Stages: [
-    {
-      id: 1,
-      name: "Stage 1",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      id: 2,
-      name: "Stage 2",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      id: 3,
-      name: "Stage 3",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      id: 4,
-      name: "Stage 4",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      id: 5,
-      name: "Stage 5",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-  ],
+  Questions: questions,
+  Stages: stages,
   doneStages: [],
   currentStage: 0,
   stepone: true,
@@ -91,6 +14,8 @@ const inistialState = {
   fifthstep: false,
   sixstep: false,
   response: [],
+  isDone: false,
+  score: 0,
 };
 
 const Reducer = (state = inistialState, action) => {
@@ -136,6 +61,19 @@ const Reducer = (state = inistialState, action) => {
       return {
         ...state,
         sixstep: action.payload,
+      };
+    case Types.ADD_RESPONSE:
+      var responses = state.response;
+      console.log(responses);
+      responses.push(action.payload);
+      return {
+        ...state,
+        response: responses,
+      };
+    case Types.SET_IS_DONE:
+      return {
+        ...state,
+        isDone: true,
       };
     default:
       return state;

@@ -6,7 +6,7 @@ const Input = () => {
         setValue(e.target.value);
     }
     return (
-        <input className="input" onChange={handleChange} name="value" />
+        <textarea className="input" onChange={handleChange} name="value" />
     )
 }
 

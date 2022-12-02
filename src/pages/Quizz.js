@@ -181,7 +181,7 @@ function Quizz() {
         </ArcherContainer>
       </div>
       <img className="down_cover" src={Down} style={{ width: "750px" }} />
-      {currentStage != 0 && <QuestionModal />}
+      <QuestionModal open={currentStage != 0} handleClose={()=> {}} />
     </div>
   );
 }

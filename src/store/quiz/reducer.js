@@ -1,19 +1,52 @@
 import Types from "./Types";
 const inistialState = {
   Questions: [
-    { id: 1, question: "", stageID: 1, type: "oui/non", response: "oui" },
     {
+      step: "FIRSTSTEP",
+      id: 1,
+      question: "",
+      stageID: 1,
+      type: "oui/non",
+      response: "oui",
+    },
+    {
+      step: "SECONDSTEP",
       id: 2,
       question: "question 1 ?",
-      stageID: 1,
-      type: "text",
+      stageID: 2,
+      type: "input",
       response: "response here !",
     },
     {
+      step: "THIRDSTEP",
       id: 2,
       question: "question 2 ?",
-      stageID: 2,
-      type: "text",
+      stageID: 3,
+      type: "input",
+      response: "response here !",
+    },
+    {
+      step: "FORTHSTEP",
+      id: 2,
+      question: "question 2 ?",
+      stageID: 3,
+      type: "input",
+      response: "response here !",
+    },
+    {
+      step: "FIFTHSTEP",
+      id: 2,
+      question: "question 2 ?",
+      stageID: 3,
+      type: "input",
+      response: "response here !",
+    },
+    {
+      step: "SIXTHSTEP",
+      id: 2,
+      question: "question 2 ?",
+      stageID: 3,
+      type: "input",
       response: "response here !",
     },
   ],
@@ -51,12 +84,13 @@ const inistialState = {
   ],
   doneStages: [],
   currentStage: 0,
-  stepone: false,
+  stepone: true,
   steptwo: false,
   stepthree: false,
   forthstep: false,
   fifthstep: false,
   sixstep: false,
+  response: [],
 };
 
 const Reducer = (state = inistialState, action) => {
@@ -66,6 +100,12 @@ const Reducer = (state = inistialState, action) => {
         ...state,
         currentStage: 1,
       };
+    case Types.SET_STAGE: {
+      return {
+        ...state,
+        currentStage: action.payload,
+      };
+    }
     case Types.FIFTHSTEP:
       return {
         ...state,

@@ -7,3 +7,17 @@ export const StartQuizz = (data) => async (dispatch) => {
 export const setStage = (data) => async (dispatch) => {
   dispatch({ type: Types.SET_STAGE, payload: data });
 };
+
+
+
+
+export const changeStepValue = (type) => async(dispatch) => {
+    dispatch({
+        type:Types.type,
+        payload:true
+    })
+};
+
+
+
+

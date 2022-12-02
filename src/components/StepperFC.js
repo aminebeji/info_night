@@ -8,7 +8,7 @@ const StepperFC = () => {
   const doneFifthStep = useSelector(state=>state.quizz.fifthstep);
   const doneSixthStep = useSelector(state=>state.quizz.sixstep);
   return (
-    <div>
+    <div className="stepper" >
       <div className={ doneFirststep ? "firstSDone" : "firstStep"} ></div>
       <div className={ doneSecondStep ? "secondSDone" : "secondStep"} ></div>
       <div className={ doneThirdStep ?"thirdSDone" :"thirdStep"}  ></div>

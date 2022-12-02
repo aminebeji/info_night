@@ -20,3 +20,153 @@ body {
 .nav__link3 {
   color: red !important;
 }
+
+
+.Home_fc {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.stepper {
+  margin-left: 3.5%;
+}
+.css-8atqhb {
+  display: flex !important ;
+  justify-content: center !important;
+  display: flex  !important;
+}
+.css-m5vj9m-MuiStepper-root {
+  width: 60% !important;
+}
+
+.list_question {
+
+}
+
+.qu_container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 15%;
+  margin-left: 7%;  
+}
+
+.css-m0ki15 {
+  width: 640px !important;
+  border-radius: 20px !important ;
+  border:0 !important;
+}
+
+.response_d {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  gap: 10%;
+  margin-left: 9%;
+}
+.response_in{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  gap: 10%;
+}
+.correct {
+  background-color:lightgreen;
+  width: 82px;
+  height: 3px;
+}
+
+.notDone  {
+  background-color:grey;
+  width: 82px;
+  height: 3px;
+}
+.wrong {
+  background-color:red;
+  width: 82px;
+  height: 3px;
+}
+.stepper {
+  display: flex;
+  gap: 20px;
+}
+
+.question_section {
+  width: 59%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+textarea {
+  width: 450px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+  .stepperC {
+    width:62%;
+  }
+}
+
+.obtn {
+  background-color:#77D48B;
+  border-radius: 10px;
+  height: 39px;
+  width: 151px;
+  border: 0;
+  cursor: pointer;
+}
+
+.nbtn {
+  background-color:#DA7B7B	;
+  border-radius: 10px;
+  height: 39px;
+  width: 151px;
+  border: 0;
+cursor: pointer;
+
+}
+
+.res {
+  margin-left: -28px;
+  margin-top: 50px;
+}
+
+.MuiBox-root.css-m0ki15 {
+  
+} 
+
+.scorecontainer {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+.donebtn-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  gap : 10px;
+}
+.score_icons {
+  display: flex;
+  justify-content: center;
+}

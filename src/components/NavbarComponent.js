@@ -52,7 +52,7 @@ function NavbarComponent() {
           </a>
         </li>
         <li className="nav__item">
-          <a className="nav__link nav__link--btn btn--show-modal" href="#">
+          <a className="nav__link nav__link--btn btn--show-modal" href="/quizz">
             Quiz
           </a>
         </li>

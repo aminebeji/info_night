@@ -19,5 +19,16 @@ export const changeStepValue = (type) => async(dispatch) => {
 };
 
 
+export const setResponse = (data) => async (dispatch) => {
+  dispatch({
+    type : Types.ADD_RESPONSE ,
+    payload : data
+  })
+} 
 
-
+export const setIsDone = data => async (dispatch ) => {
+  dispatch({
+    type : Types.SET_IS_DONE ,
+    payload : data
+  })
+}

@@ -1,23 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-const StepperFC = () => {
-  const doneFirststep =useSelector(state=>state.quizz.stepone);
-  const doneSecondStep=useSelector(state=>state.quizz.steptwo);
-  const doneThirdStep = useSelector(state=>state.quizz.stepthree);
-  const doneForthStep=useSelector(state=>state.quizz.forthstep);
-  const doneFifthStep = useSelector(state=>state.quizz.fifthstep);
-  const doneSixthStep = useSelector(state=>state.quizz.sixstep);
+const StepperFC = ({ currentQuestion, currentQuestionID }) => {
+  var response = useSelector((state) => state.quizz.response);
+  var isCorrect = (index) => {
+    var res = response.find((r) => r.id == currentQuestion[index].id);
+    if (!res) return false;
+    if (res.response == currentQuestion[index].response) return true;
+    else return false;
+  };
+  console.log(currentQuestionID)
   return (
-    <div className="stepper" >
-      <div className={ doneFirststep ? "firstSDone" : "firstStep"} ></div>
-      <div className={ doneSecondStep ? "secondSDone" : "secondStep"} ></div>
-      <div className={ doneThirdStep ?"thirdSDone" :"thirdStep"}  ></div>
-      <div className={ doneForthStep ? "forthSDone" : "forthS"} ></div >
-      <div className={ doneFifthStep ? "fifthSDone" : "fifthS"} ></div>
-      <div className={ doneSixthStep ? "sixthSDone" : "sixthS"}></div>
-
+    <div className="stepper">
+      <div
+        className={
+          currentQuestionID < 1 ? "notDone" : isCorrect(0) ? "correct" : "wrong"
+        }
+      ></div>
+      <div
+        className={
+          currentQuestionID < 2 ? "notDone" : isCorrect(1) ? "correct" : "wrong"
+        }
+      ></div>
+      <div
+        className={
+          currentQuestionID < 3 ? "notDone" : isCorrect(2) ? "correct" : "wrong"
+        }
+      ></div>
+      <div
+        className={
+          currentQuestionID < 4 ? "notDone" : isCorrect(3) ? "correct" : "wrong"
+        }
+      ></div>
+      <div
+        className={
+          currentQuestionID < 5 ? "notDone" : isCorrect(4) ? "correct" : "wrong"
+        }
+      ></div>
+      <div
+        className={
+          currentQuestionID < 6 ? "notDone" : isCorrect(5) ? "correct" : "wrong"
+        }
+      ></div>
     </div>
-  )
-}
+  );
+};
 
 export default StepperFC;

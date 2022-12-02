@@ -65,15 +65,19 @@ code {
   width: 60%;
   gap: 10%;
 }
-.firstSDone,.secondSDone,.thirdSDone,.forthSDone,.fifthSDone,.sixthSDone {
-  background-color:green;
+.correct {
+  background-color:lightgreen;
   width: 82px;
   height: 3px;
 }
 
-
-.firstStep,.secondStep,.thirdStep,.forthS,.fifthS,.sixthS {
+.notDone  {
   background-color:grey;
+  width: 82px;
+  height: 3px;
+}
+.wrong {
+  background-color:red;
   width: 82px;
   height: 3px;
 }
@@ -102,9 +106,7 @@ textarea {
   resize: none;
 }
 
-.questiontitle{
 
-}
 
 
 
@@ -140,3 +142,7 @@ textarea {
 .MuiBox-root.css-m0ki15 {
   
 } 
+
+.scorecontainer {
+
+}

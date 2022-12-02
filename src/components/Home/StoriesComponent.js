@@ -21,10 +21,9 @@ function StoriesComponent() {
     {
       id: 2,
       title: "Acteur, scénariste et producteur de cinéma américain",
-      description: `Charlie Sheen est connu autant pour ses pitreries hors écran que
-      pour ses côtelettes de comédie à l'écran. parmi ses travails les
-      plus connu la série télévisé two and a Half Men . en novembre
-      2015, ile comédien a révélé qu'il vivait avec le VIH . Sheen a été
+      description: `Il est connu autant pour ses pitreries hors écran que
+      pour ses côtelettes de comédie à l'écran .En novembre
+      2015, le comédien a révélé qu'il vivait avec le VIH. Sheen a été
       forcé de sortir pendant que le National Enquirer préparait une
       histoire qui aurait révélé son statut sérologique, prouvant que la
       stigmatisation du VIH affecte toujours négativement les personnes
